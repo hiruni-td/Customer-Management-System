@@ -64,3 +64,34 @@
                     <p class="empty-note" id="recent-empty" hidden>No customers yet. Add your first customer to see them here.</p>
                 </div>
             </section>
+
+            <section class="page" id="page-customers">
+                <div class="toolbar">
+                    <input type="search" id="search-input" placeholder="Search by name, email or phone">
+                    <select id="status-filter" aria-label="Filter by status">
+                        <option value="all">All statuses</option>
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                    <button class="btn btn-primary" id="add-btn">Add customer</button>
+                </div>
+
+                <div class="card">
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th><th>Customer</th><th>Phone</th><th>Company</th>
+                                    <th>Status</th><th>Date added</th><th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="customer-body"></tbody>
+                        </table>
+                    </div>
+                    <div class="empty-state" id="empty-state" hidden>
+                        <div class="empty-icon">📭</div>
+                        <h3 id="empty-title">No customers yet</h3>
+                        <p id="empty-text">Add your first customer to get started.</p>
+                    </div>
+                </div>
+            </section>
