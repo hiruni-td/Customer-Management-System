@@ -14,3 +14,19 @@
      --shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 4px 12px rgba(16, 24, 40, 0.05);
      --sidebar-w: 240px;
  }
+
+ [data-theme="dark"] {
+     --bg: #0e141b;
+     --surface: #17202b;
+     --text: #e6ebf2;
+     --muted: #94a0b2;
+     --border: #263241;
+     -primary: #2dd4bf;
+     --primary-hover: #5eead4;
+     --primary-soft: #12353a;
+     --danger: #ff7b7b;
+     -danger-soft: #3a1d22;
+     --success: #4ade80;
+     --success-soft: #13301f;
+     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.25);
+ }
