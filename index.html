@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Management System</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="app"></div>
 
-     <aside class="sidebar" id="sidebar">
+    <aside class="sidebar" id="sidebar">
         <div class="brand">
             <span class="brand-logo">C</span>
             <span class="brand-name">Customer Manager</span>
@@ -24,7 +26,7 @@
     </aside>
     <div class="overlay" id="overlay"></div>
 
-     <div class="main">
+    <div class="main">
 
         <header class="topbar">
             <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu">☰</button>
@@ -39,15 +41,21 @@
                 <div class="stats">
                     <div class="card stat">
                         <span class="stat-icon blue">👥</span>
-                        <div><p>Total customers</p><strong id="stat-total">0</strong></div>
+                        <div>
+                            <p>Total customers</p><strong id="stat-total">0</strong>
+                        </div>
                     </div>
                     <div class="card stat">
                         <span class="stat-icon green">✅</span>
-                        <div><p>Active customers</p><strong id="stat-active">0</strong></div>
+                        <div>
+                            <p>Active customers</p><strong id="stat-active">0</strong>
+                        </div>
                     </div>
                     <div class="card stat">
                         <span class="stat-icon grey">⏸️</span>
-                        <div><p>Inactive customers</p><strong id="stat-inactive">0</strong></div>
+                        <div>
+                            <p>Inactive customers</p><strong id="stat-inactive">0</strong>
+                        </div>
                     </div>
                 </div>
 
@@ -56,12 +64,18 @@
                     <div class="table-wrap">
                         <table>
                             <thead>
-                                <tr><th>Customer</th><th>Company</th><th>Status</th><th>Date added</th></tr>
+                                <tr>
+                                    <th>Customer</th>
+                                    <th>Company</th>
+                                    <th>Status</th>
+                                    <th>Date added</th>
+                                </tr>
                             </thead>
                             <tbody id="recent-body"></tbody>
                         </table>
                     </div>
-                    <p class="empty-note" id="recent-empty" hidden>No customers yet. Add your first customer to see them here.</p>
+                    <p class="empty-note" id="recent-empty" hidden>No customers yet. Add your first customer to see them
+                        here.</p>
                 </div>
             </section>
 
@@ -81,8 +95,13 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>ID</th><th>Customer</th><th>Phone</th><th>Company</th>
-                                    <th>Status</th><th>Date added</th><th>Actions</th>
+                                    <th>ID</th>
+                                    <th>Customer</th>
+                                    <th>Phone</th>
+                                    <th>Company</th>
+                                    <th>Status</th>
+                                    <th>Date added</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody id="customer-body"></tbody>
@@ -145,3 +164,29 @@
                     </div>
                 </form>
             </section>
+
+            <section class="page" id="page-settings">
+                <div class="card settings">
+                    <div class="setting-row">
+                        <div>
+                            <h3>Appearance</h3>
+                            <p>Switch between the light and dark theme.</p>
+                        </div> <button class="btn btn-ghost" id="settings-theme">Switch theme</button>
+                    </div>
+                    <div class="setting-row">
+                        <div>
+                            <h3>Restore sample data</h3>
+                            <p>Replace all customers with the 3 sample customers.</p>
+                        </div> <button class="btn btn-ghost" id="reset-btn">Restore samples</button>
+                    </div>
+                    <div class="setting-row">
+                        <div>
+                            <h3>Delete all customers</h3>
+                            <p>Remove every customer from this browser. This cannot be undone.</p>
+                        </div> <button class="btn btn-danger" id="clear-btn">Delete all</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
