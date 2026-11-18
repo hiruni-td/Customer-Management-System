@@ -43,3 +43,23 @@
      color: var(--text);
      line-height: 1.5;
  }
+
+ button,
+ input,
+ select {
+     font: inherit;
+     color: inherit;
+ }
+
+ h1 {
+     font-size: 1.35rem;
+ }
+
+ h2 {
+     font-size: 1.05rem;
+     margin-bottom: 14px;
+ }
+
+ h3 {
+     font-size: 1rem;
+ }
